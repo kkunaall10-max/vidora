@@ -87,21 +87,28 @@ body {
   left: 1rem;
   transform: translateY(-50%);
   font-size: 1.4rem;
-  color: var(--gray-2);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .input-group input {
   width: 100%;
   padding: 1rem 3rem;
   font-size: 1rem;
-  background-color: var(--gray);
+  background-color: transparent;
   border-radius: .5rem;
-  border: 0.125rem solid var(--white);
+  border: 0.125rem solid rgba(255, 255, 255, 0.3);
   outline: none;
+  color: var(--white);
+  backdrop-filter: blur(10px);
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .input-group input:focus {
   border: 0.125rem solid var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .form button {
@@ -203,30 +210,31 @@ body {
 
 /* BACKGROUND */
 
+.container {
+  background: linear-gradient(135deg, #000000 0%, #ffffff 100%);
+}
+
 .container::before {
-  content: "";
+  content: "Welcome to Vidora";
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 300vw;
-  transform: translate(35%, 0);
-  background-image: linear-gradient(-45deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  transition: 1s ease-in-out;
-  z-index: 6;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-bottom-right-radius: max(50vw, 50vh);
-  border-top-left-radius: max(50vw, 50vh);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .container.sign-in::before {
-  transform: translate(0, 0);
-  right: 50%;
+  content: "Welcome to Vidora";
 }
 
 .container.sign-up::before {
-  transform: translate(100%, 0);
-  right: 50%;
+  content: "Join Vidora Today";
 }
 
 /* RESPONSIVE */

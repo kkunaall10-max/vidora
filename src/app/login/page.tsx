@@ -143,27 +143,7 @@ export default function Login() {
       </div>
       {/* END FORM SECTION */}
 
-      {/* CONTENT SECTION */}
-      <div className="row content-row">
-        {/* SIGN IN CONTENT */}
-        <div className="col align-items-center flex-col">
-          <div className="text sign-in">
-            <h2>Welcome to Vidora</h2>
-          </div>
-          <div className="img sign-in"></div>
-        </div>
-        {/* END SIGN IN CONTENT */}
 
-        {/* SIGN UP CONTENT */}
-        <div className="col align-items-center flex-col">
-          <div className="img sign-up"></div>
-          <div className="text sign-up">
-            <h2>Join with us</h2>
-          </div>
-        </div>
-        {/* END SIGN UP CONTENT */}
-      </div>
-      {/* END CONTENT SECTION */}
     </div>
   );
 }
