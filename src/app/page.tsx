@@ -32,37 +32,37 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-light mb-16 text-gray-200">Built for the modern creator economy</h2>
           <div className="flex flex-wrap justify-center gap-16">
-            <div className="text-center fade-in">
+            <div className="text-center">
               <div className="w-24 h-24 border border-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:border-white transition-colors duration-300">
                 <span className="text-white text-xl font-medium">VE</span>
               </div>
               <span className="text-gray-300 text-sm font-light">Video Editing</span>
             </div>
-            <div className="text-center fade-in animation-delay-100">
+            <div className="text-center">
               <div className="w-24 h-24 border border-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:border-white transition-colors duration-300">
                 <span className="text-white text-xl font-medium">MG</span>
               </div>
               <span className="text-gray-300 text-sm font-light">Motion Graphics</span>
             </div>
-            <div className="text-center fade-in animation-delay-200">
+            <div className="text-center">
               <div className="w-24 h-24 border border-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:border-white transition-colors duration-300">
                 <span className="text-white text-xl font-medium">RS</span>
               </div>
               <span className="text-gray-300 text-sm font-light">Reels & Shorts</span>
             </div>
-            <div className="text-center fade-in animation-delay-300">
+            <div className="text-center">
               <div className="w-24 h-24 border border-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:border-white transition-colors duration-300">
                 <span className="text-white text-xl font-medium">YA</span>
               </div>
               <span className="text-gray-300 text-sm font-light">YouTube & Ads</span>
             </div>
-            <div className="text-center fade-in animation-delay-400">
+            <div className="text-center">
               <div className="w-24 h-24 border border-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:border-white transition-colors duration-300">
                 <span className="text-white text-xl font-medium">CG</span>
               </div>
               <span className="text-gray-300 text-sm font-light">Color Grading</span>
             </div>
-            <div className="text-center fade-in animation-delay-500">
+            <div className="text-center">
               <div className="w-24 h-24 border border-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:border-white transition-colors duration-300">
                 <span className="text-white text-xl font-medium">PP</span>
               </div>
@@ -75,10 +75,10 @@ export default function Home() {
       {/* How It Works */}
       <section className="py-24 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-20 fade-in">How It Works</h2>
+          <h2 className="text-5xl font-bold text-center mb-20">How It Works</h2>
           <div className="grid md:grid-cols-2 gap-20">
             {/* For Clients */}
-            <div className="fade-in">
+            <div>
               <h3 className="text-3xl font-semibold mb-10">For Clients</h3>
               <div className="space-y-8">
                 <div className="flex items-start group hover:bg-gray-900/50 p-6 rounded-xl transition-all duration-300">
@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </div>
             {/* For Video Editors */}
-            <div className="fade-in animation-delay-300">
+            <div>
               <h3 className="text-3xl font-semibold mb-10">For Video Editors</h3>
               <div className="space-y-8">
                 <div className="flex items-start group hover:bg-gray-900/50 p-6 rounded-xl transition-all duration-300">
@@ -138,21 +138,21 @@ export default function Home() {
       {/* Why Vidora Exists */}
       <section className="py-24 px-4 bg-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-16 fade-in">Why Vidora?</h2>
+          <h2 className="text-5xl font-bold mb-16">Why Vidora?</h2>
           <div className="grid md:grid-cols-2 gap-16">
-            <div className="text-left fade-in">
+            <div className="text-left">
               <h3 className="text-2xl font-semibold mb-6">Built only for video editors</h3>
               <p className="text-gray-300 leading-relaxed font-light">A dedicated platform focused solely on video editing talent and opportunities.</p>
             </div>
-            <div className="text-left fade-in animation-delay-200">
+            <div className="text-left">
               <h3 className="text-2xl font-semibold mb-6">No irrelevant freelance categories</h3>
               <p className="text-gray-300 leading-relaxed font-light">Streamlined experience without the noise of unrelated services.</p>
             </div>
-            <div className="text-left fade-in animation-delay-400">
+            <div className="text-left">
               <h3 className="text-2xl font-semibold mb-6">Faster, cleaner hiring process</h3>
               <p className="text-gray-300 leading-relaxed font-light">Efficient matching and collaboration tools designed for creators.</p>
             </div>
-            <div className="text-left fade-in animation-delay-600">
+            <div className="text-left">
               <h3 className="text-2xl font-semibold mb-6">Quality over quantity</h3>
               <p className="text-gray-300 leading-relaxed font-light">Premium focus on verified talent and exceptional work.</p>
             </div>
@@ -163,25 +163,25 @@ export default function Home() {
       {/* Platform Preview */}
       <section className="py-24 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-20 fade-in">Everything you need to work better</h2>
+          <h2 className="text-5xl font-bold text-center mb-20">Everything you need to work better</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 fade-in hover:scale-105">
+            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Professional Editor Profiles</h3>
               <p className="text-gray-300 leading-relaxed font-light">Showcase your skills, experience, and portfolio in one place.</p>
             </div>
-            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 fade-in animation-delay-200 hover:scale-105">
+            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Client & Editor Dashboards</h3>
               <p className="text-gray-300 leading-relaxed font-light">Manage projects, track progress, and communicate seamlessly.</p>
             </div>
-            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 fade-in animation-delay-400 hover:scale-105">
+            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Project Posting & Applications</h3>
               <p className="text-gray-300 leading-relaxed font-light">Post projects and receive applications from qualified editors.</p>
             </div>
-            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 fade-in animation-delay-600 hover:scale-105">
+            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Secure Communication</h3>
               <p className="text-gray-300 leading-relaxed font-light">Built-in messaging and file sharing for smooth collaboration.</p>
             </div>
-            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 fade-in animation-delay-800 hover:scale-105">
+            <div className="bg-gray-900/50 p-10 border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4">Portfolio-focused hiring</h3>
               <p className="text-gray-300 leading-relaxed font-light">Make decisions based on actual work and proven results.</p>
             </div>
@@ -191,7 +191,7 @@ export default function Home() {
 
       {/* Community & Trust Message */}
       <section className="py-24 px-4 bg-black">
-        <div className="max-w-4xl mx-auto text-center fade-in">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-medium mb-10">Made for creators, editors, and brands who take video seriously.</h2>
           <p className="text-2xl text-gray-300 leading-relaxed font-light">
             Vidora is built to support real talent, real projects, and long-term collaboration.
@@ -201,7 +201,7 @@ export default function Home() {
 
       {/* Final Call to Action */}
       <section className="py-24 px-4 bg-black">
-        <div className="max-w-4xl mx-auto text-center fade-in">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-12">Ready to start with Vidora?</h2>
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
             <button className="glassmorphism-button px-12 py-5 rounded-full font-semibold text-black hover:scale-105 transition-all duration-500">
@@ -218,25 +218,25 @@ export default function Home() {
       <footer className="py-20 px-4 bg-black border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-16">
-            <div className="fade-in">
+            <div>
               <h3 className="text-2xl font-semibold mb-8">Vidora</h3>
               <p className="text-gray-300 leading-relaxed font-light">Connecting video editors with creators worldwide.</p>
             </div>
-            <div className="fade-in animation-delay-200">
+            <div>
               <h4 className="font-medium mb-8 text-gray-200">About</h4>
               <ul className="space-y-4 text-gray-300 font-light">
                 <li><a href="#" className="hover:text-white transition-colors duration-300">About</a></li>
                 <li><a href="#" className="hover:text-white transition-colors duration-300">Contact</a></li>
               </ul>
             </div>
-            <div className="fade-in animation-delay-400">
+            <div>
               <h4 className="font-medium mb-8 text-gray-200">Legal</h4>
               <ul className="space-y-4 text-gray-300 font-light">
                 <li><a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-white transition-colors duration-300">Terms & Conditions</a></li>
               </ul>
             </div>
-            <div className="fade-in animation-delay-600">
+            <div>
               <h4 className="font-medium mb-8 text-gray-200">Follow Us</h4>
               <div className="flex space-x-8">
                 <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Twitter</a>
@@ -273,24 +273,6 @@ export default function Home() {
             0 4px 16px rgba(0, 0, 0, 0.3);
           transform: scale(1.03);
         }
-
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-in {
-          animation: fadeIn 1.2s ease-out forwards;
-          opacity: 0;
-        }
-
-        .animation-delay-100 { animation-delay: 0.1s; }
-        .animation-delay-200 { animation-delay: 0.2s; }
-        .animation-delay-300 { animation-delay: 0.3s; }
-        .animation-delay-400 { animation-delay: 0.4s; }
-        .animation-delay-500 { animation-delay: 0.5s; }
-        .animation-delay-600 { animation-delay: 0.6s; }
-        .animation-delay-800 { animation-delay: 0.8s; }
       `}</style>
     </div>
   );
