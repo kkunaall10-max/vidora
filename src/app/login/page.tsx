@@ -7,16 +7,7 @@ export default function Login() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-black overflow-hidden relative">
-      {/* Dotted Grid Background */}
-      <svg className="absolute inset-0 w-full h-full z-0" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="dottedGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-            <circle cx="2" cy="2" r="1" fill="rgba(0,0,0,0.15)" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#dottedGrid)" />
-      </svg>
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
 
       {/* Navbar - Responsive for auth pages */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
@@ -75,39 +66,33 @@ export default function Login() {
 
       {/* Login Form */}
       <div className="pt-20 pb-8 px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex items-center">
-        <div className="max-w-md mx-auto w-full">
-          <div className="text-center mb-6 sm:mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-black mb-3 sm:mb-4">Welcome Back</h1>
-            <p className="text-sm sm:text-base text-gray-600">Sign in to your Vidora account</p>
+        <div className="w-full max-w-md mx-auto">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold mb-2">Welcome Back</h2>
+            <p className="text-gray-400 text-sm">Sign in to your Vidora account</p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8">
-            <form className="space-y-6">
+          <div className="bg-white/4 backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-white/10">
+            <form className="space-y-4">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
-                </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                  placeholder="Enter your email"
+                  className="w-full px-4 py-3 bg-black border border-white/15 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/25"
+                  placeholder="Email"
                 />
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-                  Password
-                </label>
                 <input
                   type="password"
                   id="password"
                   name="password"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                  placeholder="Enter your password"
+                  className="w-full px-4 py-3 bg-black border border-white/15 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/25"
+                  placeholder="Password"
                 />
               </div>
 
@@ -117,25 +102,25 @@ export default function Login() {
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"
-                    className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300 rounded"
+                    className="h-4 w-4 text-gray-300 focus:ring-gray-400 border-gray-600 rounded"
                   />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
+                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-300">
                     Remember me
                   </label>
                 </div>
 
                 <div className="text-sm">
-                  <a href="#" className="text-gray-600 hover:text-black">
+                  <a href="#" className="text-gray-400 hover:text-white">
                     Forgot your password?
                   </a>
                 </div>
               </div>
 
-              <button className="pearl-button w-full">
+              <button className="button">
                 <div className="wrap">
                   <p>
-                    <span>🔐</span>
-                    <span>✨</span>
+                    <span>✧</span>
+                    <span>✦</span>
                     Sign In
                   </p>
                 </div>

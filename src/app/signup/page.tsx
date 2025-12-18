@@ -7,16 +7,7 @@ export default function Signup() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-black overflow-hidden relative">
-      {/* Dotted Grid Background */}
-      <svg className="absolute inset-0 w-full h-full z-0" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="dottedGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-            <circle cx="2" cy="2" r="1" fill="rgba(0,0,0,0.15)" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#dottedGrid)" />
-      </svg>
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
 
       {/* Navbar - Responsive for auth pages */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
@@ -76,109 +67,71 @@ export default function Signup() {
       {/* Signup Form */}
       <div className="pt-20 pb-8 px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex items-center">
         <div className="max-w-md mx-auto w-full">
-          <div className="text-center mb-6 sm:mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-black mb-3 sm:mb-4">Join Vidora</h1>
-            <p className="text-sm sm:text-base text-gray-600">Create your account and start connecting with video editors</p>
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold mb-2">Create Account</h2>
+            <p className="text-gray-400 text-sm">Join us today</p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8">
-            <form className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                    placeholder="Doe"
-                  />
-                </div>
+          <div className="bg-white/4 backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-white/10">
+            <form className="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  required
+                  className="w-full px-4 py-3 bg-black border border-white/15 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/25"
+                  placeholder="Full Name"
+                />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
-                </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                  placeholder="john@example.com"
+                  className="w-full px-4 py-3 bg-black border border-white/15 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/25"
+                  placeholder="Email"
                 />
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-                  Password
-                </label>
                 <input
                   type="password"
                   id="password"
                   name="password"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                  placeholder="Create a strong password"
+                  className="w-full px-4 py-3 bg-black border border-white/15 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/25"
+                  placeholder="Password"
                 />
               </div>
 
-              <div>
-                <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-2">
-                  Confirm Password
-                </label>
-                <input
-                  type="password"
-                  id="confirmPassword"
-                  name="confirmPassword"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
-                  placeholder="Confirm your password"
-                />
-              </div>
-
-              <div className="flex items-center">
+              <div className="flex items-start">
                 <input
                   id="terms"
                   name="terms"
                   type="checkbox"
                   required
-                  className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300 rounded"
+                  className="h-4 w-4 mt-1 text-gray-300 focus:ring-gray-400 border-gray-600 rounded"
                 />
-                <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
+                <label htmlFor="terms" className="ml-2 block text-sm text-gray-300">
                   I agree to the{' '}
-                  <a href="#" className="text-black hover:underline">
+                  <a href="#" className="text-white hover:underline">
                     Terms of Service
                   </a>{' '}
                   and{' '}
-                  <a href="#" className="text-black hover:underline">
+                  <a href="#" className="text-white hover:underline">
                     Privacy Policy
                   </a>
                 </label>
               </div>
 
-              <button className="pearl-button w-full">
+              <button className="button">
                 <div className="wrap">
                   <p>
-                    <span>🚀</span>
-                    <span>✨</span>
+                    <span>✧</span>
+                    <span>✦</span>
                     Create Account
                   </p>
                 </div>
