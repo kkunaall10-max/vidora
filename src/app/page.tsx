@@ -17,12 +17,18 @@ export default function Home() {
             Vidora is a focused platform built exclusively for video editors and clients — no noise, just quality work and real opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="glassmorphism-button px-12 py-4 rounded-full font-semibold text-black hover:scale-105 transition-all duration-500">
-              Hire a Video Editor
-            </button>
-            <button className="glassmorphism-button px-12 py-4 rounded-full font-semibold text-black hover:scale-105 transition-all duration-500">
-              Join as a Video Editor
-            </button>
+            <div className="button-wrap">
+              <button className="glassmorphism-button">
+                <span>Hire a Video Editor</span>
+              </button>
+              <div className="button-shadow"></div>
+            </div>
+            <div className="button-wrap">
+              <button className="glassmorphism-button">
+                <span>Join as a Video Editor</span>
+              </button>
+              <div className="button-shadow"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -204,12 +210,18 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-12">Ready to start with Vidora?</h2>
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
-            <button className="glassmorphism-button px-12 py-5 rounded-full font-semibold text-black hover:scale-105 transition-all duration-500">
-              Post a Video Project
-            </button>
-            <button className="glassmorphism-button px-12 py-5 rounded-full font-semibold text-black hover:scale-105 transition-all duration-500">
-              Create Editor Profile
-            </button>
+            <div className="button-wrap">
+              <button className="glassmorphism-button">
+                <span>Post a Video Project</span>
+              </button>
+              <div className="button-shadow"></div>
+            </div>
+            <div className="button-wrap">
+              <button className="glassmorphism-button">
+                <span>Create Editor Profile</span>
+              </button>
+              <div className="button-shadow"></div>
+            </div>
           </div>
         </div>
       </section>
