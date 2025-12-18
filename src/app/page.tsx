@@ -56,8 +56,8 @@ export default function Home() {
                 <div className="button-shadow"></div>
               </div>
               <div className="button-wrap w-24">
-                <button className="px-4 py-2 h-9 w-full">
-                  <span className="text-sm">Sign Up</span>
+                <button className="px-5 py-3 h-9 w-full">
+                  <span className="text-sm">SignUp</span>
                 </button>
                 <div className="button-shadow"></div>
               </div>
@@ -165,25 +165,37 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-radial from-purple-900/10 via-transparent to-transparent"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-radial from-blue-100/20 to-transparent rounded-full blur-3xl"></div>
 
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl lg:text-8xl font-black mb-8 leading-tight tracking-tight text-black">
-            Hire Expert<br />Video Editors
-          </h1>
-          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
-            Vidora is a focused platform built exclusively for video editors and clients — no noise, just quality work and real opportunities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <div className="button-wrap">
-              <button>
-                <span>Hire a Video Editor</span>
-              </button>
-              <div className="button-shadow"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Content - Left Side */}
+            <div className="text-left">
+              <h1 className="text-5xl lg:text-7xl font-black mb-8 leading-tight tracking-tight text-black">
+                Hire Expert<br />Video Editors
+              </h1>
+              <p className="text-xl text-gray-600 mb-12 leading-relaxed font-light max-w-xl">
+                Vidora is a focused platform built exclusively for video editors and clients — no noise, just quality work and real opportunities.
+              </p>
+              <div className="button-wrap w-40">
+                <button className="w-full">
+                  <span>Get Started</span>
+                </button>
+                <div className="button-shadow"></div>
+              </div>
             </div>
-            <div className="button-wrap">
-              <button>
-                <span>Join as a Video Editor</span>
-              </button>
-              <div className="button-shadow"></div>
+
+            {/* Video/Photo Placeholder - Right Side */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-lg h-96 bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+                <div className="text-center text-gray-500">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                  <p className="text-lg font-medium">Video/Photo Placeholder</p>
+                  <p className="text-sm">8-second video will be added here</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

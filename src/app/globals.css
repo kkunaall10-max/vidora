@@ -86,7 +86,7 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
   width: calc(100% - var(--shadow-cuttoff-fix) - 0.25em);
   height: calc(100% - var(--shadow-cuttoff-fix) - 0.25em);
-  top: calc(var(--shadow-cuttoff-fix) - 0.5em);
+  top: calc(var(--shadow-cuttoff-fix) - 0.25em);
   left: calc(var(--shadow-cuttoff-fix) - 0.875em);
   padding: 0.125em;
   box-sizing: border-box;
