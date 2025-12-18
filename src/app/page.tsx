@@ -13,16 +13,16 @@ export default function Home() {
         <rect width="100%" height="100%" fill="url(#dottedGrid)" />
       </svg>
       {/* Hero Section */}
-      <section className="relative bg-black py-32 px-4 overflow-hidden">
+      <section className="relative bg-white py-32 px-4 overflow-hidden">
         {/* Glowing Background Effect */}
-        <div className="absolute inset-0 bg-gradient-radial from-purple-900/20 via-transparent to-transparent"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-radial from-white/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-radial from-purple-900/10 via-transparent to-transparent"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-radial from-blue-100/20 to-transparent rounded-full blur-3xl"></div>
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl lg:text-8xl font-black mb-8 leading-tight tracking-tight">
+          <h1 className="text-6xl lg:text-8xl font-black mb-8 leading-tight tracking-tight text-black">
             Hire Expert<br />Video Editors
           </h1>
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
+          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
             Vidora is a focused platform built exclusively for video editors and clients — no noise, just quality work and real opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 px-4 bg-gray-50 relative z-10">
+      <section className="py-24 px-4 bg-white relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-20 text-black">How It Works</h2>
           <div className="grid md:grid-cols-2 gap-20">
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* Platform Preview */}
-      <section className="py-24 px-4 bg-gray-50 relative z-10">
+      <section className="py-24 px-4 bg-white relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-20 text-black">Everything you need to work better</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -215,7 +215,7 @@ export default function Home() {
       </section>
 
       {/* Final Call to Action */}
-      <section className="py-24 px-4 bg-gray-50 relative z-10">
+      <section className="py-24 px-4 bg-white relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-12 text-black">Ready to start with Vidora?</h2>
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
