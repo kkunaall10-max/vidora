@@ -65,148 +65,29 @@ export default function Login() {
         </div>
       </nav>
 
-      {/* Login Form */}
-      <div className="pt-20 pb-8 px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex items-center">
-        <div className="w-full max-w-md mx-auto">
-          <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold mb-2">Welcome Back</h2>
-            <p className="text-gray-400 text-sm">Sign in to your Vidora account</p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
-            {/* LOGIN FORM */}
-            {isLoginVisible ? (
-              <div id="login">
-                <h2 className="text-center mb-2 text-3xl font-bold text-black">Welcome Back</h2>
-                <p className="text-center text-gray-600 mb-6 text-sm">Sign in to your Vidora account</p>
-
-                <form className="space-y-4">
-                  <div className="field">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
-                      placeholder="Email"
-                    />
-                  </div>
-
-                  <div className="field">
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
-                      placeholder="Password"
-                    />
-                  </div>
-
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center">
-                      <input
-                        id="remember-me"
-                        name="remember-me"
-                        type="checkbox"
-                        className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300 rounded"
-                      />
-                      <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
-                        Remember me
-                      </label>
-                    </div>
-
-                    <div className="text-sm">
-                      <a href="#" className="text-gray-600 hover:text-black">
-                        Forgot your password?
-                      </a>
-                    </div>
-                  </div>
-
-                  <button className="button w-full">
-                    <div className="wrap">
-                      <p>
-                        <span>✧</span>
-                        <span>✦</span>
-                        Sign In
-                      </p>
-                    </div>
-                  </button>
-                </form>
-
-                <div className="toggle mt-6 text-center text-sm text-gray-600">
-                  Don't have an account?{' '}
-                  <span
-                    className="text-black cursor-pointer font-medium hover:underline"
-                    onClick={() => setIsLoginVisible(false)}
-                  >
-                    Sign up
-                  </span>
-                </div>
-              </div>
-            ) : (
-              /* SIGNUP FORM */
-              <div id="signup">
-                <h2 className="text-center mb-2 text-3xl font-bold text-black">Create Account</h2>
-                <p className="text-center text-gray-600 mb-6 text-sm">Join us today</p>
-
-                <form className="space-y-4">
-                  <div className="field">
-                    <input
-                      type="text"
-                      id="fullName"
-                      name="fullName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
-                      placeholder="Full Name"
-                    />
-                  </div>
-
-                  <div className="field">
-                    <input
-                      type="email"
-                      id="signup-email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
-                      placeholder="Email"
-                    />
-                  </div>
-
-                  <div className="field">
-                    <input
-                      type="password"
-                      id="signup-password"
-                      name="password"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
-                      placeholder="Password"
-                    />
-                  </div>
-
-                  <button className="button w-full">
-                    <div className="wrap">
-                      <p>
-                        <span>✧</span>
-                        <span>✦</span>
-                        Sign Up
-                      </p>
-                    </div>
-                  </button>
-                </form>
-
-                <div className="toggle mt-6 text-center text-sm text-gray-600">
-                  Already have an account?{' '}
-                  <span
-                    className="text-black cursor-pointer font-medium hover:underline"
-                    onClick={() => setIsLoginVisible(true)}
-                  >
-                    Login
-                  </span>
-                </div>
-              </div>
-            )}
-          </div>
+      {/* 3D Forms Container */}
+      <div className="container">
+        <div className={`forms-wrapper ${!isLoginVisible ? 'change' : ''}`}>
+          <form className="signin-form">
+            <a href="#" className="signup-btn" onClick={(e) => { e.preventDefault(); setIsLoginVisible(false); }}>Sign Up</a>
+            <h2>Sign In</h2>
+            <div className="inputs-wrapper">
+              <input type="text" placeholder="Your Email" />
+              <input type="password" placeholder="Password" />
+              <input type="submit" value="Sign In" />
+            </div>
+          </form>
+          <form className="signup-form">
+            <a href="#" className="signin-btn" onClick={(e) => { e.preventDefault(); setIsLoginVisible(true); }}>Sign In</a>
+            <h2>Sign Up</h2>
+            <div className="inputs-wrapper">
+              <input type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Your Email" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm Password" />
+              <input type="submit" value="Sign Up" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
