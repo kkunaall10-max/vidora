@@ -10,14 +10,14 @@ export default function Home() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-8 lg:px-12">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0">
+          <div className="grid grid-cols-12 items-center h-16 gap-4">
+            {/* Logo - Takes 2 columns */}
+            <div className="col-span-2 flex-shrink-0">
               <h1 className="text-2xl font-bold text-black">Vidora</h1>
             </div>
 
-            {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center ml-12 space-x-8">
+            {/* Desktop Navigation Links - Takes 4 columns */}
+            <div className="hidden lg:col-span-4 lg:flex items-center justify-start space-x-8">
               <a href="#" className="flex items-center justify-center w-32 h-9 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-md px-3">
                 About Us
               </a>
@@ -29,8 +29,8 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Search Box - Desktop */}
-            <div className="hidden lg:flex flex-1 justify-center mx-8">
+            {/* Search Box - Desktop - Takes 4 columns, centered */}
+            <div className="hidden lg:col-span-4 lg:flex justify-center">
               <div className="w-full max-w-md">
                 <div className="relative">
                   <input
@@ -47,8 +47,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Auth Buttons - Desktop */}
-            <div className="hidden lg:flex items-center space-x-3">
+            {/* Auth Buttons - Desktop - Takes 2 columns */}
+            <div className="hidden lg:col-span-2 lg:flex items-center justify-end space-x-3">
               <button className="text-gray-700 hover:text-black transition-colors duration-200 font-medium px-4 py-2 h-9">
                 Login
               </button>
