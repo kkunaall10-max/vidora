@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,18 +50,18 @@ export default function Home() {
 
             {/* Auth Buttons - Desktop - Takes 2 columns */}
             <div className="hidden lg:col-span-2 lg:flex items-center justify-end space-x-3">
-              <div className="button-wrap w-24">
+              <Link href="/login" className="button-wrap w-24">
                 <button className="px-4 py-2 h-9 w-full">
                   <span className="text-sm">Login</span>
                 </button>
                 <div className="button-shadow"></div>
-              </div>
-              <div className="button-wrap w-24">
+              </Link>
+              <Link href="/signup" className="button-wrap w-24">
                 <button className="px-5 py-3 h-9 w-full">
                   <span className="text-sm">SignUp</span>
                 </button>
                 <div className="button-shadow"></div>
-              </div>
+              </Link>
             </div>
 
             {/* Tablet Search - Show on md to lg, hide on lg+ */}
@@ -132,15 +133,15 @@ export default function Home() {
 
                 {/* Mobile Auth Buttons */}
                 <div className="px-3 py-2 space-y-2">
-                  <button className="w-full text-left text-gray-700 hover:text-black transition-colors duration-200 font-medium py-2 px-3 rounded-md hover:bg-gray-50">
+                  <Link href="/login" className="block w-full text-left text-gray-700 hover:text-black transition-colors duration-200 font-medium py-2 px-3 rounded-md hover:bg-gray-50">
                     Login
-                  </button>
-                  <div className="button-wrap">
+                  </Link>
+                  <Link href="/signup" className="button-wrap block">
                     <button className="w-full">
                       <span>Sign Up</span>
                     </button>
                     <div className="button-shadow"></div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
