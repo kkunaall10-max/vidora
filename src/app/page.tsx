@@ -256,21 +256,21 @@ export default function Home() {
         }
 
         .glassmorphism-button {
-          background: rgba(255, 255, 255, 0.08);
-          backdrop-filter: blur(16px);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.15),
-            0 4px 16px rgba(0, 0, 0, 0.2);
+            inset 0 1px 0 rgba(255, 255, 255, 0.1),
+            0 4px 16px rgba(0, 0, 0, 0.15);
           transition: all 0.6s ease;
         }
 
         .glassmorphism-button:hover {
-          background: rgba(255, 255, 255, 0.12);
+          background: rgba(255, 255, 255, 0.08);
           box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.25),
-            0 8px 32px rgba(255, 255, 255, 0.08),
-            0 4px 16px rgba(0, 0, 0, 0.3);
+            inset 0 1px 0 rgba(255, 255, 255, 0.15),
+            0 8px 32px rgba(255, 255, 255, 0.06),
+            0 4px 16px rgba(0, 0, 0, 0.2);
           transform: scale(1.03);
         }
       `}</style>
