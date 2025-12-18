@@ -17,14 +17,14 @@ export default function Home() {
             </div>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-8">
-              <a href="#" className="text-gray-700 hover:text-black transition-colors duration-200 font-medium">
+            <div className="hidden lg:flex items-center space-x-6">
+              <a href="#" className="flex items-center justify-center w-32 h-10 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-lg px-3">
                 About Us
               </a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors duration-200 font-medium">
+              <a href="#" className="flex items-center justify-center w-40 h-10 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-lg px-3">
                 Become a Freelancer
               </a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors duration-200 font-medium">
+              <a href="#" className="flex items-center justify-center w-20 h-10 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-lg px-3">
                 Plans
               </a>
             </div>
