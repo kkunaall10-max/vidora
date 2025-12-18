@@ -1,97 +1,118 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4">
+      <section className="bg-black py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Hire Expert Video Editors. Get Hired for Video Projects.
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              Hire Expert Video Editors.<br />
+              Get Hired for Video Projects.
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              A dedicated platform where clients find professional video editors — fast, reliable, and verified.
+            <p className="text-xl text-gray-300 mb-8">
+              Vidora is a focused platform built exclusively for video editors and clients — no noise, just quality work and real opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              <button className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 Hire a Video Editor
               </button>
-              <button className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-3 rounded-lg font-semibold border border-blue-600 transition-colors">
-                Join as Video Editor
+              <button className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Join as a Video Editor
               </button>
             </div>
           </div>
           <div className="lg:w-1/2">
             {/* Placeholder for hero image/video */}
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <span className="text-gray-500 text-lg">Hero Visual</span>
+            <div className="bg-gray-800 rounded-lg h-96 flex items-center justify-center border border-gray-700">
+              <span className="text-gray-400 text-lg">Hero Visual</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trust Signals */}
-      <section className="py-16 px-4 bg-white">
+      {/* Trust Strip */}
+      <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Trusted by creators & brands</h2>
+          <h2 className="text-2xl font-semibold mb-8">Built for the modern creator economy</h2>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="flex flex-col items-center">
-              <span className="text-4xl mb-2">🎬</span>
-              <span className="text-gray-700">Video Editing</span>
+            <div className="text-center">
+              <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <span className="text-white text-xl">VE</span>
+              </div>
+              <span className="text-gray-300">Video Editing</span>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-4xl mb-2">🎨</span>
-              <span className="text-gray-700">Motion Graphics</span>
+            <div className="text-center">
+              <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <span className="text-white text-xl">MG</span>
+              </div>
+              <span className="text-gray-300">Motion Graphics</span>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-4xl mb-2">🎥</span>
-              <span className="text-gray-700">Reels & YouTube</span>
+            <div className="text-center">
+              <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <span className="text-white text-xl">RS</span>
+              </div>
+              <span className="text-gray-300">Reels & Shorts</span>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-4xl mb-2">📈</span>
-              <span className="text-gray-700">Ads & Short-form</span>
+            <div className="text-center">
+              <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <span className="text-white text-xl">YA</span>
+              </div>
+              <span className="text-gray-300">YouTube & Ads</span>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <span className="text-white text-xl">CG</span>
+              </div>
+              <span className="text-gray-300">Color Grading</span>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <span className="text-white text-xl">PP</span>
+              </div>
+              <span className="text-gray-300">Post-Production</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How Vidora Works */}
-      <section className="py-16 px-4 bg-gray-50">
+      {/* How It Works */}
+      <section className="py-16 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">How Vidora Works</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
           <div className="grid md:grid-cols-2 gap-12">
             {/* For Clients */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">For Clients</h3>
+              <h3 className="text-xl font-semibold mb-6">For Clients</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">1</span>
-                  <span className="text-gray-700">Post your video project</span>
+                  <span className="w-8 h-8 border border-white rounded-full flex items-center justify-center mr-4 text-white">1</span>
+                  <span className="text-gray-300">Post your video project</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">2</span>
-                  <span className="text-gray-700">Get matched with editors</span>
+                  <span className="w-8 h-8 border border-white rounded-full flex items-center justify-center mr-4 text-white">2</span>
+                  <span className="text-gray-300">Browse verified editors</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">3</span>
-                  <span className="text-gray-700">Hire & collaborate</span>
+                  <span className="w-8 h-8 border border-white rounded-full flex items-center justify-center mr-4 text-white">3</span>
+                  <span className="text-gray-300">Hire, collaborate, and deliver</span>
                 </div>
               </div>
             </div>
-            {/* For Editors */}
+            {/* For Video Editors */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">For Editors</h3>
+              <h3 className="text-xl font-semibold mb-6">For Video Editors</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <span className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">1</span>
-                  <span className="text-gray-700">Create profile</span>
+                  <span className="w-8 h-8 border border-white rounded-full flex items-center justify-center mr-4 text-white">1</span>
+                  <span className="text-gray-300">Create your professional profile</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">2</span>
-                  <span className="text-gray-700">Apply to projects</span>
+                  <span className="w-8 h-8 border border-white rounded-full flex items-center justify-center mr-4 text-white">2</span>
+                  <span className="text-gray-300">Apply to real video projects</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">3</span>
-                  <span className="text-gray-700">Get paid for work</span>
+                  <span className="w-8 h-8 border border-white rounded-full flex items-center justify-center mr-4 text-white">3</span>
+                  <span className="text-gray-300">Get paid for your skills</span>
                 </div>
               </div>
             </div>
@@ -99,73 +120,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Vidora */}
-      <section className="py-16 px-4 bg-white">
+      {/* Why Vidora Exists */}
+      <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Vidora?</h2>
+          <h2 className="text-3xl font-bold mb-8">Why Vidora?</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-left">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Only for video editors</h3>
-              <p className="text-gray-600">Dedicated platform for professional video editing talent.</p>
+              <h3 className="text-lg font-semibold mb-4">Built only for video editors</h3>
+              <p className="text-gray-300">Dedicated platform for professional video editing talent.</p>
             </div>
             <div className="text-left">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">No random freelancers</h3>
-              <p className="text-gray-600">Verified experts with proven portfolios.</p>
+              <h3 className="text-lg font-semibold mb-4">No irrelevant freelance categories</h3>
+              <p className="text-gray-300">Focused on video editing expertise only.</p>
             </div>
             <div className="text-left">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Faster hiring</h3>
-              <p className="text-gray-600">Quick matching and streamlined process.</p>
+              <h3 className="text-lg font-semibold mb-4">Faster, cleaner hiring process</h3>
+              <p className="text-gray-300">Quick matching and streamlined workflow.</p>
             </div>
             <div className="text-left">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Quality-focused creators</h3>
-              <p className="text-gray-600">Built for modern content workflows.</p>
+              <h3 className="text-lg font-semibold mb-4">Quality over quantity</h3>
+              <p className="text-gray-300">Designed for long-term creator growth.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Feature Preview */}
-      <section className="py-16 px-4 bg-gray-50">
+      {/* Platform Preview */}
+      <section className="py-16 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Platform Features</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Everything you need to work better</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">👤</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Editor Profiles</h3>
-              <p className="text-gray-600">Showcase your skills and experience</p>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Professional Editor Profiles</h3>
+              <p className="text-gray-300">Showcase your skills and experience</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">📋</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Client Dashboard</h3>
-              <p className="text-gray-600">Manage your projects easily</p>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Client & Editor Dashboards</h3>
+              <p className="text-gray-300">Manage your projects easily</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">💬</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Secure Messaging</h3>
-              <p className="text-gray-600">Communicate safely with team</p>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Project Posting & Applications</h3>
+              <p className="text-gray-300">Connect with the right opportunities</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Secure Communication</h3>
+              <p className="text-gray-300">Communicate safely with team</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Portfolio-focused hiring</h3>
+              <p className="text-gray-300">Quality work gets recognized</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="py-16 px-4 bg-white">
+      {/* Community & Trust Message */}
+      <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Built for creators</h2>
-          <p className="text-lg text-gray-600 mb-4">Community-first platform for modern content workflows</p>
-          <p className="text-gray-500">Made for video editors and content creators</p>
+          <h2 className="text-2xl font-semibold mb-6">Made for creators, editors, and brands who take video seriously.</h2>
+          <p className="text-lg text-gray-300">
+            Vidora is built to support real talent, real projects, and long-term collaboration.
+          </p>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 px-4 bg-blue-600 text-white">
+      {/* Final Call to Action */}
+      <section className="py-16 px-4 bg-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to hire or get hired?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to start with Vidora?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Post a Project
+            <button className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Post a Video Project
             </button>
-            <button className="bg-blue-700 hover:bg-blue-800 px-8 py-3 rounded-lg font-semibold transition-colors">
+            <button className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Create Editor Profile
             </button>
           </div>
@@ -173,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-gray-900 text-white">
+      <footer className="py-12 px-4 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
@@ -181,7 +208,7 @@ export default function Home() {
               <p className="text-gray-400">Connecting video editors with creators worldwide.</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Company</h4>
+              <h4 className="font-semibold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white">About</a></li>
                 <li><a href="#" className="hover:text-white">Contact</a></li>
@@ -191,7 +218,7 @@ export default function Home() {
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white">Terms of Service</a></li>
+                <li><a href="#" className="hover:text-white">Terms & Conditions</a></li>
               </ul>
             </div>
             <div>
