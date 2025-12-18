@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black overflow-hidden relative">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-8 lg:px-12">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -17,29 +17,29 @@ export default function Home() {
             </div>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-6">
-              <a href="#" className="flex items-center justify-center w-32 h-10 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-lg px-3">
+            <div className="hidden lg:flex items-center ml-12 space-x-8">
+              <a href="#" className="flex items-center justify-center w-32 h-9 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-md px-3">
                 About Us
               </a>
-              <a href="#" className="flex items-center justify-center w-40 h-10 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-lg px-3">
+              <a href="#" className="flex items-center justify-center w-40 h-9 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-md px-3">
                 Become a Freelancer
               </a>
-              <a href="#" className="flex items-center justify-center w-20 h-10 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-lg px-3">
+              <a href="#" className="flex items-center justify-center w-20 h-9 text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-200 font-medium rounded-md px-3">
                 Plans
               </a>
             </div>
 
             {/* Search Box - Desktop */}
-            <div className="hidden lg:flex flex-1 justify-center px-8">
+            <div className="hidden lg:flex flex-1 justify-center mx-8">
               <div className="w-full max-w-md">
                 <div className="relative">
                   <input
                     type="text"
                     placeholder="Search for video editors..."
-                    className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-sm"
+                    className="w-full pl-4 pr-10 py-1.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-sm"
                   />
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                    <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                   </div>
@@ -48,13 +48,13 @@ export default function Home() {
             </div>
 
             {/* Auth Buttons - Desktop */}
-            <div className="hidden lg:flex items-center space-x-4">
-              <button className="text-gray-700 hover:text-black transition-colors duration-200 font-medium px-4 py-2">
+            <div className="hidden lg:flex items-center space-x-3">
+              <button className="text-gray-700 hover:text-black transition-colors duration-200 font-medium px-4 py-2 h-9">
                 Login
               </button>
               <div className="button-wrap">
-                <button>
-                  <span>Sign Up</span>
+                <button className="px-4 py-2 h-9">
+                  <span className="text-sm">Sign Up</span>
                 </button>
                 <div className="button-shadow"></div>
               </div>
