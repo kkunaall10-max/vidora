@@ -1,6 +1,10 @@
 "use client";
 
+import { useState } from 'react';
+
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white text-black overflow-hidden relative">
       {/* Navbar */}
@@ -12,8 +16,8 @@ export default function Home() {
               <h1 className="text-2xl font-bold text-black">Vidora</h1>
             </div>
 
-            {/* Navigation Links */}
-            <div className="hidden md:flex items-center space-x-8">
+            {/* Desktop Navigation Links */}
+            <div className="hidden lg:flex items-center space-x-8">
               <a href="#" className="text-gray-700 hover:text-black transition-colors duration-200 font-medium">
                 About Us
               </a>
@@ -25,14 +29,14 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Search Box */}
-            <div className="hidden md:flex flex-1 justify-center px-8">
+            {/* Search Box - Desktop */}
+            <div className="hidden lg:flex flex-1 justify-center px-8">
               <div className="w-full max-w-md">
                 <div className="relative">
                   <input
                     type="text"
                     placeholder="Search for video editors..."
-                    className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
+                    className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-sm"
                   />
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,9 +47,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Auth Buttons */}
-            <div className="flex items-center space-x-4">
-              <button className="text-gray-700 hover:text-black transition-colors duration-200 font-medium">
+            {/* Auth Buttons - Desktop */}
+            <div className="hidden lg:flex items-center space-x-4">
+              <button className="text-gray-700 hover:text-black transition-colors duration-200 font-medium px-4 py-2">
                 Login
               </button>
               <div className="button-wrap">
@@ -56,15 +60,88 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Tablet Search - Show on md to lg, hide on lg+ */}
+            <div className="hidden md:flex lg:hidden flex-1 justify-center px-4">
+              <div className="w-full max-w-sm">
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    className="w-full pl-3 pr-8 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-sm"
+                  />
+                  <div className="absolute inset-y-0 right-0 pr-2 flex items-center">
+                    <svg className="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button className="text-gray-700 hover:text-black">
+            <div className="lg:hidden">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-gray-700 hover:text-black p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+                aria-label="Toggle mobile menu"
+              >
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  {isMobileMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  )}
                 </svg>
               </button>
             </div>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <div className="lg:hidden border-t border-gray-200 bg-white/95 backdrop-blur-sm">
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {/* Mobile Search */}
+                <div className="px-3 py-2">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Search for video editors..."
+                      className="w-full pl-3 pr-8 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-sm"
+                    />
+                    <div className="absolute inset-y-0 right-0 pr-2 flex items-center">
+                      <svg className="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Navigation Links */}
+                <a href="#" className="block px-3 py-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-colors duration-200 font-medium rounded-md">
+                  About Us
+                </a>
+                <a href="#" className="block px-3 py-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-colors duration-200 font-medium rounded-md">
+                  Become a Freelancer
+                </a>
+                <a href="#" className="block px-3 py-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-colors duration-200 font-medium rounded-md">
+                  Plans
+                </a>
+
+                {/* Mobile Auth Buttons */}
+                <div className="px-3 py-2 space-y-2">
+                  <button className="w-full text-left text-gray-700 hover:text-black transition-colors duration-200 font-medium py-2 px-3 rounded-md hover:bg-gray-50">
+                    Login
+                  </button>
+                  <div className="button-wrap">
+                    <button className="w-full">
+                      <span>Sign Up</span>
+                    </button>
+                    <div className="button-shadow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
