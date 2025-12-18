@@ -321,10 +321,10 @@ button:active::after {
 }
 
 .pearl-button .wrap {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
-  padding: 32px 45px;
+  padding: 20px 30px;
   border-radius: inherit;
   position: relative;
   overflow: hidden;
