@@ -49,9 +49,12 @@ export default function Home() {
 
             {/* Auth Buttons - Desktop - Takes 2 columns */}
             <div className="hidden lg:col-span-2 lg:flex items-center justify-end space-x-3">
-              <button className="text-gray-700 hover:text-black transition-colors duration-200 font-medium px-4 py-2 h-9">
-                Login
-              </button>
+              <div className="button-wrap">
+                <button className="px-4 py-2 h-9">
+                  <span className="text-sm">Login</span>
+                </button>
+                <div className="button-shadow"></div>
+              </div>
               <div className="button-wrap">
                 <button className="px-4 py-2 h-9">
                   <span className="text-sm">Sign Up</span>
