@@ -148,7 +148,7 @@ export default function Login() {
         {/* SIGN IN CONTENT */}
         <div className="col align-items-center flex-col">
           <div className="text sign-in">
-            <h2>Welcome</h2>
+            <h2>Welcome to Vidora</h2>
           </div>
           <div className="img sign-in"></div>
         </div>
