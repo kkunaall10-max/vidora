@@ -49,14 +49,14 @@ export default function Home() {
 
             {/* Auth Buttons - Desktop - Takes 2 columns */}
             <div className="hidden lg:col-span-2 lg:flex items-center justify-end space-x-3">
-              <div className="button-wrap">
-                <button className="px-4 py-2 h-9">
+              <div className="button-wrap w-24">
+                <button className="px-4 py-2 h-9 w-full">
                   <span className="text-sm">Login</span>
                 </button>
                 <div className="button-shadow"></div>
               </div>
-              <div className="button-wrap">
-                <button className="px-4 py-2 h-9">
+              <div className="button-wrap w-24">
+                <button className="px-4 py-2 h-9 w-full">
                   <span className="text-sm">Sign Up</span>
                 </button>
                 <div className="button-shadow"></div>
